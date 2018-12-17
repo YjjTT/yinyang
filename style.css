@@ -1,4 +1,4 @@
-div{
+.pseudoDiv{
     width: 96px;
     height: 48px;
     background: #eee;
@@ -9,7 +9,7 @@ div{
     position: relative;
     box-sizing: content-box;
   }
-  div::before{
+  .pseudoDiv::before{
     content: "";
     position: absolute;
     top: 50%;
@@ -21,7 +21,7 @@ div{
     height: 12px;
     box-sizing: content-box;
   }
-  div::after{
+  .pseudoDiv::after{
     content: "";
     position: absolute;
     top: 50%;
@@ -33,3 +33,52 @@ div{
     height: 12px;
     box-sizing: content-box;
   }
+
+  .yinyang{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #ffffff 0%,#ffffff 50%,#000000 51%,#000000 100%);
+    position: relative;
+  }
+  .yinyang .one{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 50px;
+  }
+  .yinyang .two{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 50px;
+  }
+  .yinyang .one .oneInner{
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
+  .yinyang .two .twoInner{
+    width: 30px;
+    height: 30px;
+    background: #000;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+  
+  
+  
+  
+  
